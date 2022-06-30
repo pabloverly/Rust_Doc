@@ -1,0 +1,13 @@
+base_url = "https://zola-hyde.netlify.com"
+compile_sass = true
+title = "Rust Doc"
+description = "Documentação rust pt-br"
+
+[extra]
+hyde_sticky = true
+hyde_reverse = false
+hyde_theme = ""
+hyde_links = [
+     {url = "http://simbiosecode.store", name = "Simbiose"},
+    {url = "/about", name = "About"},
+]
