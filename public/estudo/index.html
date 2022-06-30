@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+      <!-- Enable responsiveness on mobile devices-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+      <title>Rust Doc</title>
+
+      <!-- CSS -->
+      <link rel="stylesheet" href="https://zola-hyde.netlify.com/print.css" media="print">
+      <link rel="stylesheet" href="https://zola-hyde.netlify.com/poole.css">
+      <link rel="stylesheet" href="https://zola-hyde.netlify.com/hyde.css">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700|Abril+Fatface">
+
+      
+
+      
+      
+    </head>
+
+    <body class=" ">
+        
+            <div class="sidebar">
+                <div class="container sidebar-sticky">
+                    <div class="sidebar-about">
+                        
+                            <a href="https:&#x2F;&#x2F;zola-hyde.netlify.com"><h1>Rust Doc</h1></a>
+                            
+                            <p class="lead">Documentação rust pt-br</p>
+                            
+                        
+                    </div>
+
+                    <ul class="sidebar-nav">
+                        
+                        
+                        <li class="sidebar-nav-item"><a href="http:&#x2F;&#x2F;simbiosecode.store">Simbiose</a></li>
+                        
+                        <li class="sidebar-nav-item"><a href="&#x2F;about">About</a></li>
+                        
+                        
+                    </ul>
+                </div>
+            </div>
+        
+
+        <div class="content container">
+            
+<div class="post">
+  <h1 class="post-title">Estudo</h1>
+  
+    <span class="post-date">2019-11-14</span>
+  
+    <h1 id="rust">RUST</h1>
+<h2 id="padrao-de-comentarios">PADRAO DE COMENTARIOS</h2>
+<p>// = PADRAO C 
+/* */ = MULTILINE</p>
+<h2 id="funcao-main">FUNCAO MAIN</h2>
+<p>FUNÇÃO DE INTERPOINTS = PRIMEIRA FUNCAO A SER CHAMADA</p>
+<pre data-lang="rust" class="language-rust "><code class="language-rust" data-lang="rust">fn main(){
+}
+</code></pre>
+<h2 id="anotacoes">ANOTAÇOES</h2>
+<pre data-lang="rust" class="language-rust "><code class="language-rust" data-lang="rust">&#x2F;* para permitir variaveis sem uso *&#x2F;
+#[allow(unused_variable) ]
+
+</code></pre>
+<h2 id="placeholder-e-macros">PLACEHOLDER E MACROS</h2>
+<ul>
+<li>
+<p>Para alocação de memoria é necessario ultilizar Placeholder <strong>{}</strong></p>
+</li>
+<li>
+<p>Para identificar as macros usa-se caractere <strong>!</strong></p>
+</li>
+</ul>
+<pre data-lang="rust" class="language-rust "><code class="language-rust" data-lang="rust">fn main (){
+    print!(&quot;O resultado de 3 + 5 = {}&quot;, 3 + 5 );
+}
+</code></pre>
+<h2 id="funcoes">FUNÇÕES</h2>
+<pre data-lang="rust" class="language-rust "><code class="language-rust" data-lang="rust">struct Person {
+    name: String, &#x2F;&#x2F;TIPO DE STRING DINAMICA
+    idade: i32
+}
+
+&#x2F;&#x2F; implementa comportamento da struct Person
+impl Person{
+    fn sayhi(&amp;self) -&gt; String{
+        format!(&quot;Meu nome é : {} minha idade {}&quot;, self.name, self.idade)
+    }
+
+}
+fn main (){
+    &#x2F;&#x2F;ATRIBUIÇÃO &quot;Pablo&quot; TIPO DE STRINT STATICA 
+    let person1 = Person {name: &quot;Pablo&quot;.to_string(), idade: 38 };
+    let person2 = Person {name: &quot;Bianca&quot;.to_string(), idade: 36 };
+    
+    println!(&quot;{}&quot;, person1.sayhi());
+    println!(&quot;{}&quot;, person2.sayhi());
+}
+</code></pre>
+<h1 id="to-be-continue"><strong>TO BE CONTINUE  ...</strong></h1>
+<h2 id="license">License</h2>
+<p>MIT</p>
+<h3 id="simbiosecode"><strong>SIMBIOSECODE</strong></h3>
+
+</div>
+
+        </div>
+
+    </body>
+
+</html>
